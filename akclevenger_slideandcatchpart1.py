@@ -1,10 +1,7 @@
 import pygame, random, simpleGE
 
-""" catch the Cash 5
-    Add coin collision, sound effect
-"""
 
-class Coin(simpleGE.Sprite):
+class Worm(simpleGE.Sprite):
     def __init__(self, scene):
         super().__init__(scene)
         self.setImage("Worm.png")
@@ -20,7 +17,7 @@ class Coin(simpleGE.Sprite):
         if self.bottom > self.screenHeight:
             self.reset()
 
-class Charlie(simpleGE.Sprite):
+class Fish(simpleGE.Sprite):
     def __init__(self, scene):
         super().__init__(scene)
         self.setImage("Fish.png")
